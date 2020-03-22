@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #D6F6DD;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  font-family: 'Fira Code', monospace;
+  background-color: #65B7C7;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+header a {
+  color: #333333;
+  text-decoration: none;
+}
+
+header nav a {
+  margin-left: 20px;
+}
+
+h1, h2 {
+  font-family: 'Concert One', cursive;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #68BDCC;
+}
+
+section h1 {
+  font-size: 5em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #68BDCC;
+  margin-top: 20px;
+  margin-bottom: .5em;
+}
+
+.user-picture {
+  margin-top: 2.5em;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #68BDCC;
+  max-width: 13.2em;
+}
+
+.social-ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-ul a {
+  color: #68BDCC;
+  font-size: 2.8em;
+  margin: 0 .5em;
+}
+
+.user-description {
+  border: 5px solid #68BDCC;
+  font-size: 1.3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding: 15px;
+}
+
+footer {
+  background-color: #65B7C7;
+  color: #333333;
+  padding: 10px;
+  text-align: center;
+}

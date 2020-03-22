@@ -7,24 +7,29 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Fira+Code|Roboto:400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Concert+One|Fira+Code|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <a href="https://ezequiasor.github.io/">ezequias@ezequiasr.dev ~ $</a>
-    <a href="#about">~/ about</a>
-    <a href="#projects">~/ projects</a>
+    <div>
+      <a href="https://ezequiasor.github.io/">ezequias@ezequiasr.dev ~ $</a>
+    </div>
+    <nav>
+      <a href="#about">~/about</a>
+      <a href="#projects">~/projects</a>
+    </nav>
   </header>
 
   <section id="about">
     <div>
-      <img src="images/me.jpg" alt="my photo">
+      <img src="images/me.jpg" alt="my photo" class="user-picture" >
     </div>
 
-    <div>Ezequias Rocha</div>
+    <h1>Ezequias Rocha</h1>
 
     <div id="social">
-      <ul>
+      <ul class="social-ul">
         <li>
           <a href="https://github.com/ezequiasor" target="_blank" rel="me" title="GitHub">
             <i class="fab fa-github"></i>
@@ -38,7 +43,9 @@
       </ul>
 
     </div>
-    <div>Computer Science Student at Federal University of Campina Grande.</div>
+    <div class="user-description">
+      Computer Science Student at Federal University of Campina Grande.
+    </div>
   </section>
 
   <section id="projects">
