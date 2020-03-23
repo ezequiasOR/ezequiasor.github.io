@@ -24,7 +24,8 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 0;
+  z-index: 1;
+  box-shadow: 0 1px 4px 0 #777;
 }
 
 header a {
@@ -40,7 +41,7 @@ h1, h2 {
   font-family: 'Concert One', cursive;
 }
 
-section {
+.about {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -49,13 +50,29 @@ section {
   color: #68BDCC;
 }
 
-section h1 {
+.about h1 {
   font-size: 5em;
   font-weight: 400;
   text-transform: uppercase;
-  color: #68BDCC;
   margin-top: 20px;
   margin-bottom: .5em;
+}
+
+.projects {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  background-color: #65B7C7;
+  color: #333333;
+}
+
+.projects h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 90px;
 }
 
 .user-picture {
@@ -90,6 +107,7 @@ section h1 {
 }
 
 footer {
+  font-family: 'Fira Code', monospace;
   background-color: #65B7C7;
   color: #333333;
   padding: 10px;
