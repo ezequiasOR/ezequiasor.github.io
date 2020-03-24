@@ -11,22 +11,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div>
-      <a href="https://ezequiasor.github.io/">ezequias@ezequiasr.dev ~ $</a>
-    </div>
-    <nav>
-      <input type="checkbox" id="check">
-      
-      <label id="icon" class="button" for="check">
-        <i class="fas fa-bars"></i>
-      </label>
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <input type="checkbox" id="check">
+          <label id="icon" class="button" for="check">
+            <i class="fas fa-bars"></i>
+          </label>
 
-      <div class="menu dropdown">
-        <a href="#about">~/about</a>
-        <a href="#projects">~/projects</a>
+          <a href="https://ezequiasor.github.io/">ezequias@ezequiasr.dev ~ $</a>
+        </div>
+        <div class="navbar-collapse">
+          <ul class="nav">
+            <li class="dropdown">
+              <a href="#about">~/about</a>
+            </li>
+            <li class="dropdown">
+              <a href="#projects">~/projects</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      
     </nav>
   </header>
 
@@ -62,6 +68,15 @@
     // projects go here
   </section>
 
-  <footer>Made by Ezequias R.</footer>
+  <footer><i class="fa fa-code" aria-hidden="true"></i> by Ezequias R.</footer>
+
+  <script>
+    const button = document.querySelector('#check')
+    const navbarCollapse = document.querySelector('.navbar-collapse')
+
+    button.addEventListener('click', () => {
+      navbarCollapse.classList.toggle('navbar-collapse-open')
+    })
+  </script>
 </body>
 </html>

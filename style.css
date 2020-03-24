@@ -6,35 +6,22 @@ body {
   background-color: #D6F6DD;
   font-family: 'Roboto', sans-serif;
   margin: 0;
+  padding-top: 30px;
 }
 
 img {
   max-width: 100%;
 }
 
-#check {
+#check, #icon {
+  cursor: pointer;
   display: none;
 }
 
-#icon {
-  cursor: pointer;
-  z-index: 1;
-}
-
-#check:checked ~ .dropdown {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-header {
+.header {
   font-family: 'Fira Code', monospace;
   background-color: #65B7C7;
   color: #333333;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px;
   position: fixed;
   top: 0;
   left: 0;
@@ -43,21 +30,36 @@ header {
   box-shadow: 0 1px 4px 0 #777;
 }
 
-header a {
+.navbar-header, .navbar-collapse {
+  padding: 15px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.navbar-header  {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-collapse ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+.header a {
   color: #333333;
   text-decoration: none;
-}
-
-header nav a {
-  margin-left: 20px;
-}
-
-header .button {
-  background-color: #65B7C7;
-  border: none;
-  font-size: 16px;
-  outline: none;
-  display: none;
 }
 
 h1, h2 {
@@ -100,7 +102,7 @@ h1, h2 {
 }
 
 .user-picture {
-  margin-top: 70px;
+  margin-top: 35px;
   border-radius: 50%;
   border-style: solid;
   border-width: 5px;
@@ -139,8 +141,33 @@ footer {
 }
 
 @media (max-width: 812px) {
-  header .button { display: block; }
-  .menu { display: none; }
+  #icon {
+    display: block;
+  }
+
+  .navbar-header  {
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
+
+  .navbar-collapse-open {
+    display: block;
+  }
+
+  .navbar-collapse-open ul li{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 360px) {
