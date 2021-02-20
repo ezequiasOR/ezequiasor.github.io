@@ -1,0 +1,16 @@
+{
+  "infos": {
+    "labels": [
+      "GitHub",
+      "LinkedIn",
+      "Email",
+      "Resume"
+    ],
+    "links": [
+      "https://github.com/ezequiasOR",
+      "https://linkedin.com/in/ezequias-rocha",
+      "mailto:ezequias.rocha9@gmail.com",
+      "https://ezequiasor.github.io/resume"
+    ]
+  }
+}
